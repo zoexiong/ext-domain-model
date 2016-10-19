@@ -26,6 +26,9 @@ open class TestMe {
 public struct Money {
     public var amount : Int
     public var currency : String
+    public var description: String {
+            return "\(self.currency)\(self.amount)"
+    }
     public func convert(_ to: String) -> Money {
         var value=0
         var amount=0
@@ -80,7 +83,9 @@ open class Job {
     var raise = 0
     fileprivate var title : String
     fileprivate var type : JobType
-    
+    public var description: String {
+        return "\(self.title),\(self.type)"
+    }
     public enum JobType {
         case Hourly(Double)
         case Salary(Int)
@@ -152,6 +157,9 @@ open class Person {
     open func toString() -> String {
         return "[Person: firstName:\(firstName) lastName:\(lastName) age:\(age) job:\(job) spouse:\(spouse)]"
     }
+    public var description: String {
+        return "[Person: firstName:\(firstName) lastName:\(lastName) age:\(age) job:\(job) spouse:\(spouse)]"
+    }
 }
 ////////////////////////////////////
 // Family
@@ -186,6 +194,13 @@ open class Family {
         }
         let result = income.reduce(0,+)
         return result
+    }
+    public var description: String {
+        var names = [String]()
+        for person in members {
+        names.append(person.firstName)
+        }
+        return "members: \(names)"
     }
 }
 

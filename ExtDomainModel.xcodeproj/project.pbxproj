@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FE6891181CB5D8E40018C340 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6891171CB5D8E40018C340 /* main.swift */; };
-		FE6891251CB5D90B0018C340 /* SimpleDomainModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6891241CB5D90B0018C340 /* SimpleDomainModelTests.swift */; };
+		FE6891251CB5D90B0018C340 /* ExtDomainModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6891241CB5D90B0018C340 /* ExtDomainModelTests.swift */; };
 		FE68912A1CB5D9130018C340 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6891171CB5D8E40018C340 /* main.swift */; };
 		FE68912C1CB5FDC60018C340 /* JobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE68912B1CB5FDC60018C340 /* JobTests.swift */; };
 		FE68912E1CB5FEC70018C340 /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE68912D1CB5FEC70018C340 /* MoneyTests.swift */; };
@@ -31,7 +31,7 @@
 		FE6891141CB5D8E40018C340 /* ExtDomainModel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExtDomainModel; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6891171CB5D8E40018C340 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FE6891221CB5D90B0018C340 /* ExtDomainModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtDomainModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE6891241CB5D90B0018C340 /* SimpleDomainModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDomainModelTests.swift; sourceTree = "<group>"; };
+		FE6891241CB5D90B0018C340 /* ExtDomainModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtDomainModelTests.swift; sourceTree = "<group>"; };
 		FE6891261CB5D90B0018C340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE68912B1CB5FDC60018C340 /* JobTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobTests.swift; sourceTree = "<group>"; };
 		FE68912D1CB5FEC70018C340 /* MoneyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyTests.swift; sourceTree = "<group>"; };
@@ -59,8 +59,8 @@
 		FE68910B1CB5D8E40018C340 = {
 			isa = PBXGroup;
 			children = (
-				FE6891161CB5D8E40018C340 /* SimpleDomainModel */,
-				FE6891231CB5D90B0018C340 /* SimpleDomainModelTests */,
+				FE6891161CB5D8E40018C340 /* ExtDomainModel */,
+				FE6891231CB5D90B0018C340 /* ExtDomainModelTests */,
 				FE6891151CB5D8E40018C340 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,23 +74,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FE6891161CB5D8E40018C340 /* SimpleDomainModel */ = {
+		FE6891161CB5D8E40018C340 /* ExtDomainModel */ = {
 			isa = PBXGroup;
 			children = (
 				FE6891171CB5D8E40018C340 /* main.swift */,
 			);
+			name = ExtDomainModel;
 			path = SimpleDomainModel;
 			sourceTree = "<group>";
 		};
-		FE6891231CB5D90B0018C340 /* SimpleDomainModelTests */ = {
+		FE6891231CB5D90B0018C340 /* ExtDomainModelTests */ = {
 			isa = PBXGroup;
 			children = (
-				FE6891241CB5D90B0018C340 /* SimpleDomainModelTests.swift */,
+				FE6891241CB5D90B0018C340 /* ExtDomainModelTests.swift */,
 				FE6891261CB5D90B0018C340 /* Info.plist */,
 				FE68912B1CB5FDC60018C340 /* JobTests.swift */,
 				FE68912D1CB5FEC70018C340 /* MoneyTests.swift */,
 				FE68912F1CB6023B0018C340 /* PersonTests.swift */,
 			);
+			name = ExtDomainModelTests;
 			path = SimpleDomainModelTests;
 			sourceTree = "<group>";
 		};
@@ -196,7 +198,7 @@
 				FE68912A1CB5D9130018C340 /* main.swift in Sources */,
 				FE6891301CB6023B0018C340 /* PersonTests.swift in Sources */,
 				FE68912E1CB5FEC70018C340 /* MoneyTests.swift in Sources */,
-				FE6891251CB5D90B0018C340 /* SimpleDomainModelTests.swift in Sources */,
+				FE6891251CB5D90B0018C340 /* ExtDomainModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

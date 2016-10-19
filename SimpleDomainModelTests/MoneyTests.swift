@@ -25,6 +25,7 @@ class MoneyTests: XCTestCase {
     let oneUSD = Money(amount: 1, currency: "USD")
     XCTAssert(oneUSD.amount == 1)
     XCTAssert(oneUSD.currency == "USD")
+    XCTAssert(oneUSD.description == "USD1")
     
     let tenGBP = Money(amount: 10, currency: "GBP")
     XCTAssert(tenGBP.amount == 10)
