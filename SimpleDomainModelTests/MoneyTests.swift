@@ -92,7 +92,8 @@ class MoneyTests: XCTestCase {
     let total = tenUSD.add(fiveGBP)
     XCTAssert(total.amount == 10)
     XCTAssert(total.currency == "GBP")
-// added unit test
+
+// added unit test for +, -
     let total1 = tenUSD + fiveGBP
     XCTAssert(total1.amount == 10)
     XCTAssert(total1.currency == "GBP")
@@ -102,4 +103,14 @@ class MoneyTests: XCTestCase {
 
   }
 }
-
+// added unit test for extension
+ func testExtension() {
+    let cash1 = 2.USD
+    let cash2 = 3.EUR
+    let cash3 = 4.GBP
+    let cash4 = 5.YEN
+    XCTAssert(cash1.amount == 2)
+    XCTAssert(cash2.currency == "EUR")
+    XCTAssert(cash3.currency == "GBP")
+    XCTAssert(cash4.amount == 5)
+}
