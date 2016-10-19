@@ -92,6 +92,14 @@ class MoneyTests: XCTestCase {
     let total = tenUSD.add(fiveGBP)
     XCTAssert(total.amount == 10)
     XCTAssert(total.currency == "GBP")
+// added unit test
+    let total1 = tenUSD + fiveGBP
+    XCTAssert(total1.amount == 10)
+    XCTAssert(total1.currency == "GBP")
+    let total2 = tenUSD - fiveGBP
+    XCTAssert(total2.amount == 0)
+    XCTAssert(total2.currency == "GBP")
+
   }
 }
 

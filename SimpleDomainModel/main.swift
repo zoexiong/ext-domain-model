@@ -20,14 +20,30 @@ open class TestMe {
   }
 }
 
+////////////////////////////
+// Mathematics
+//
+protocol Mathematics {
+    static func +(_ moneyA: Self,_ moneyB:Money) -> Money
+    static func -(_ moneyA: Self,_ moneyB:Money) -> Money
+}
+
 ////////////////////////////////////
 // Money
 //
-public struct Money {
+public struct Money: Mathematics {
     public var amount : Int
     public var currency : String
     public var description: String {
             return "\(self.currency)\(self.amount)"
+    }
+    static public func +(_ moneyA: Money,_ moneyB:Money) -> Money {
+        let result = moneyA.add(moneyB)
+        return result
+    }
+    static public func -(_ moneyA: Money,_ moneyB:Money) -> Money {
+        let result = moneyA.subtract(moneyB)
+        return result
     }
     public func convert(_ to: String) -> Money {
         var value=0
@@ -75,6 +91,9 @@ public struct Money {
         return output
     }
 }
+
+
+
 
 ////////////////////////////////////
 // Job
